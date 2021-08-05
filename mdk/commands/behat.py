@@ -179,7 +179,7 @@ class BehatCommand(Command):
 
         (buildnumber, buildurl) = self.ci.runBuild(jobname, params)
         print('{0:<20}: #{1}'.format('Build number', buildnumber))
-        print('{0:<20}: {1}'.format('Build url', buildurl))
+        print('{0:<20}: https://ci.moodle.org/view/Testing/job/DEV.01%20-%20Developer-requested%20Behat/{1}'.format('Build url', buildnumber))
 
     def run(self, args):
         if args.ci and args.run:
